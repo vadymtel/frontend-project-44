@@ -28,6 +28,6 @@ const getQuestion = () => {
         }
     }
 }
-//startGame(instruction)
+startGame(instruction, question, rightAnswer)
 
 export default startGame;
