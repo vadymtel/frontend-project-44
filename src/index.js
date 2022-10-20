@@ -16,7 +16,6 @@ const runGame = (instruction, func) => {
         if (userAnswer === String(rightAnswer)) {
             console.log('Correct!');
         } else {
-            console.log(typeof rightAnswer);
             return console.log(wrongAnswer);
         }
     };

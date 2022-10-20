@@ -7,3 +7,6 @@
 
 <p>Brain calc game</p>
 <script id="asciicast-o45gBW2fOsMQsKVOYAM0VdbLq" src="https://asciinema.org/a/o45gBW2fOsMQsKVOYAM0VdbLq.js" async></script>
+
+<p>Brain GCD game</p>
+<a href="https://asciinema.org/a/5fJAhRW9iVtu6aA5mCW09IWKV" target="_blank"><img src="https://asciinema.org/a/5fJAhRW9iVtu6aA5mCW09IWKV.svg" /></a>
