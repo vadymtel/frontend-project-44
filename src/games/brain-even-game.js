@@ -1,10 +1,10 @@
 import { runGame } from '../index.js'
-import { randNum } from '../randomNumber.js'
+import { getRandomInt } from '../randomNumber.js'
 
 const instruction = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 const brainEvenGame = () => {
-    const question = randNum();
+    const question = getRandomInt(0, 100);
     const isEven = String(question % 2);
     switch (isEven) {
         case '0': {

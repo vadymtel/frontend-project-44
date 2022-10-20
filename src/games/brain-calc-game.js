@@ -1,12 +1,12 @@
 import { runGame } from '../index.js'
-import { randNum } from '../randomNumber.js'
+import { getRandomInt } from '../randomNumber.js'
 
 const instruction = 'What is the result of the expression?'
 const getQuestion = () => {
     const operators = ['+', '-', '*'];
-    const oper = operators[Math.floor(Math.random() * operators.length)];
-    const x = randNum();
-    const y = randNum();
+    const oper = operators[getRandomInt(0, operators.length)];
+    const x = getRandomInt(0, 100);
+    const y = getRandomInt(0, 10);
 
     switch (oper) {
         case '+': {
