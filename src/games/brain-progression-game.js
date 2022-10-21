@@ -1,5 +1,5 @@
-import { runGame } from '../index.js';
-import { getRandomInt } from '../randomNumber.js';
+import runGame from '../index.js';
+import getRandomInt from '../randomNumber.js';
 
 const instruction = 'What number is missing in the progression?';
 const getProgression = () => {
@@ -17,4 +17,4 @@ const getProgression = () => {
 
 const letProgressionGame = () => runGame(instruction, getProgression);
 
-export { letProgressionGame };
+export default letProgressionGame;

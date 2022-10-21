@@ -18,6 +18,6 @@ const runGame = (instruction, func) => {
       return console.log(wrongAnswer);
     }
   }
-  console.log(`Congratulations, ${userName}!`);
+  return console.log(`Congratulations, ${userName}!`);
 };
-export { runGame };
+export default runGame;

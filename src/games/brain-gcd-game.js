@@ -1,5 +1,5 @@
-import { runGame } from '../index.js';
-import { getRandomInt } from '../randomNumber.js';
+import runGame from '../index.js';
+import getRandomInt from '../randomNumber.js';
 
 const instruction = 'Find the greatest common divisor of given numbers.';
 const getGcd = () => {
@@ -22,4 +22,4 @@ const getGcd = () => {
 
 const letGcdGame = () => runGame(instruction, getGcd);
 
-export { letGcdGame };
+export default letGcdGame;

@@ -1,5 +1,5 @@
-import { runGame } from '../index.js';
-import { getRandomInt } from '../randomNumber.js';
+import runGame from '../index.js';
+import getRandomInt from '../randomNumber.js';
 
 const instruction = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -20,4 +20,4 @@ const brainEvenGame = () => {
 
 const letEvenGame = () => runGame(instruction, brainEvenGame);
 
-export { letEvenGame };
+export default letEvenGame;

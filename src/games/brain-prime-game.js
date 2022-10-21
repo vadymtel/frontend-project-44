@@ -1,5 +1,5 @@
-import { runGame } from '../index.js';
-import { getRandomInt } from '../randomNumber.js';
+import runGame from '../index.js';
+import getRandomInt from '../randomNumber.js';
 
 const instruction = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -17,4 +17,4 @@ const getPrime = () => {
 
 const letPrimeGame = () => runGame(instruction, getPrime);
 
-export { letPrimeGame };
+export default letPrimeGame;

@@ -1,5 +1,5 @@
-import { runGame } from '../index.js';
-import { getRandomInt } from '../randomNumber.js';
+import runGame from '../index.js';
+import getRandomInt from '../randomNumber.js';
 
 const instruction = 'What is the result of the expression?';
 const getQuestion = () => {
@@ -29,4 +29,4 @@ const getQuestion = () => {
 
 const letCalc = () => runGame(instruction, getQuestion);
 
-export { letCalc };
+export default letCalc;
