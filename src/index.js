@@ -12,7 +12,7 @@ const runGame = (instruction, func) => {
         const [question, rightAnswer] = func();
         const userAnswer = readlineSync.question(`Question: ${question} `);
         console.log(`Your answer: ${userAnswer}`);
-        const wrongAnswer = `'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.\nLet's try again, ${userName}`;
+        const wrongAnswer = `'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.\nLet's try again, ${userName}!`;
         if (userAnswer === String(rightAnswer)) {
             console.log('Correct!');
         } else {
