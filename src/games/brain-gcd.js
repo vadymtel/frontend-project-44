@@ -1,10 +1,10 @@
-import GameProcess from '../index.js';
+import startGame from '../index.js';
 import randomIntegerValue from '../utility/randomIntegerValue.js';
 import getGreatestCommonDivisor from '../utility/getGreatestCommonDivisor.js';
 
 const instruction = 'Find the greatest common divisor of given numbers.';
 
-const roundOfGame = () => {
+const getQuestionAndAnswer = () => {
   const startOfRange = 1;
   const endOfRange = 100;
   const x = randomIntegerValue(startOfRange, endOfRange);
@@ -14,6 +14,6 @@ const roundOfGame = () => {
   return [question, rightAnswer];
 };
 
-const startBrainGCD = () => GameProcess(instruction, roundOfGame);
+const startBrainGCD = () => startGame(instruction, getQuestionAndAnswer);
 
 export default startBrainGCD;

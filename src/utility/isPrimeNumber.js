@@ -1,6 +1,6 @@
 const isPrime = (num) => {
   if (num < 2) {
-    return 'no';
+    return false;
   }
   let countDividers = 0;
   for (let i = 2; i <= num / 2; i += 1) {
@@ -8,7 +8,7 @@ const isPrime = (num) => {
       countDividers += 1;
     }
   }
-  return countDividers === 0 ? 'yes' : 'no';
+  return countDividers === 0;
 };
 
 export default isPrime;
