@@ -13,7 +13,12 @@ const roundOfGame = () => {
   const maxLength = 10;
   const lengthOfProgression = randomIntegerValue(minLength, maxLength);
   const numberOfHiddenItem = randomIntegerValue(startOfRange, lengthOfProgression);
-  const question = getProgressionWithHiddenItem(beginOfProgresion, stepOfProgresion, lengthOfProgression, numberOfHiddenItem);
+  const question = getProgressionWithHiddenItem(
+    beginOfProgresion,
+    stepOfProgresion,
+    lengthOfProgression,
+    numberOfHiddenItem,
+  );
   const rightAnswer = beginOfProgresion + stepOfProgresion * (numberOfHiddenItem + 1);
   return [question, rightAnswer];
 };

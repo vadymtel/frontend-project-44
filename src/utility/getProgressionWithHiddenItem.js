@@ -1,4 +1,9 @@
-const getProgressionWithHiddenItem = (beginNumber, step, lengthOfProgression, numberOfHiddenItem) => {
+const getProgressionWithHiddenItem = (
+  beginNumber,
+  step,
+  lengthOfProgression,
+  numberOfHiddenItem,
+) => {
   let progression = String(beginNumber);
   for (let i = 1; i <= lengthOfProgression; i += 1) {
     progression += ` ${beginNumber + step * i}`;
@@ -6,8 +11,8 @@ const getProgressionWithHiddenItem = (beginNumber, step, lengthOfProgression, nu
       progression += ' ..';
       i += 1;
     }
-  };
+  }
   return progression;
-}
+};
 
 export default getProgressionWithHiddenItem;
