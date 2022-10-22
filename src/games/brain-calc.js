@@ -8,11 +8,11 @@ const getQuestionAndAnswer = () => {
   const startOfRange = 0;
   const endOfRange = 100;
   const operators = ['+', '-', '*'];
-  const getRandomOperator = operators[randomIntegerValue(startOfRange, operators.length)];
+  const randomOperator = operators[randomIntegerValue(startOfRange, operators.length)];
   const x = randomIntegerValue(startOfRange, endOfRange);
   const y = randomIntegerValue(startOfRange, endOfRange);
-  const question = `${x} ${getRandomOperator} ${y}`;
-  const rightAnswer = calculate(x, y, getRandomOperator);
+  const question = `${x} ${randomOperator} ${y}`;
+  const rightAnswer = calculate(x, y, randomOperator);
   return [question, rightAnswer];
 };
 

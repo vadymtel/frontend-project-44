@@ -1,15 +1,13 @@
 const getProgressionWithHiddenItem = (
   beginNumber,
   step,
-  lengthOfProgression,
-  IndexOfHiddenItem,
+  progressionLength,
+  indexOfHiddenItem,
 ) => {
   let progression = '';
-  for (let i = 0; i < lengthOfProgression; i += 1) {
-    if (i === IndexOfHiddenItem) {
-      progression += ' ..';
-      i += 1;
-    } progression += ` ${beginNumber + step * i}`;
+  for (let i = 0; i < progressionLength; i += 1) {
+    const itemToAdd = i === indexOfHiddenItem ? ' ..' : ` ${beginNumber + step * i}`;
+    progression += itemToAdd;
   }
   return progression.trim();
 };

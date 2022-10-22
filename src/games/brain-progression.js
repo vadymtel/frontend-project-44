@@ -11,15 +11,15 @@ const getQuestionAndAnswer = () => {
   const stepOfProgresion = randomIntegerValue(beginOfProgresion, endOfRange);
   const minLength = 5;
   const maxLength = 10;
-  const lengthOfProgression = randomIntegerValue(minLength, maxLength);
-  const IndexOfHiddenItem = randomIntegerValue(startOfRange, lengthOfProgression);
+  const progressionLength = randomIntegerValue(minLength, maxLength);
+  const indexOfHiddenItem = randomIntegerValue(startOfRange, progressionLength);
   const question = getProgressionWithHiddenItem(
     beginOfProgresion,
     stepOfProgresion,
-    lengthOfProgression,
-    IndexOfHiddenItem,
+    progressionLength,
+    indexOfHiddenItem,
   );
-  const rightAnswer = beginOfProgresion + stepOfProgresion * (IndexOfHiddenItem);
+  const rightAnswer = beginOfProgresion + stepOfProgresion * (indexOfHiddenItem);
   return [question, rightAnswer];
 };
 
