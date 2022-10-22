@@ -2,11 +2,11 @@ const getProgressionWithHiddenItem = (
   beginNumber,
   step,
   lengthOfProgression,
-  numberOfHiddenItem,
+  IndexOfHiddenItem,
 ) => {
   let progression = '';
   for (let i = 0; i < lengthOfProgression; i += 1) {
-    if (i === numberOfHiddenItem) {
+    if (i === IndexOfHiddenItem) {
       progression += ' ..';
       i += 1;
     } progression += ` ${beginNumber + step * i}`;
