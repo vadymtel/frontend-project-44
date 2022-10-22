@@ -5,7 +5,7 @@ import getProgressionWithHiddenItem from '../utility/getProgressionWithHiddenIte
 const instruction = 'What number is missing in the progression?';
 
 const roundOfGame = () => {
-  const startOfRange = 0;
+  const startOfRange = 1;
   const endOfRange = 100;
   const beginOfProgresion = randomIntegerValue(startOfRange, endOfRange);
   const stepOfProgresion = randomIntegerValue(beginOfProgresion, endOfRange);

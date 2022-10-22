@@ -4,15 +4,14 @@ const getProgressionWithHiddenItem = (
   lengthOfProgression,
   numberOfHiddenItem,
 ) => {
-  let progression = String(beginNumber);
-  for (let i = 1; i < lengthOfProgression; i += 1) {
-    progression += ` ${beginNumber + step * i}`;
-    if (i === numberOfHiddenItem - 2) {
+  let progression = '';
+  for (let i = 0; i < lengthOfProgression; i += 1) {
+    if (i === numberOfHiddenItem) {
       progression += ' ..';
-      i += 2;
-    }
+      i += 1;
+    } progression += ` ${beginNumber + step * i}`;
   }
-  return progression;
+  return progression.trim();
 };
 
 export default getProgressionWithHiddenItem;
