@@ -19,7 +19,7 @@ const roundOfGame = () => {
     lengthOfProgression,
     numberOfHiddenItem,
   );
-  const rightAnswer = beginOfProgresion + stepOfProgresion * (numberOfHiddenItem2);
+  const rightAnswer = beginOfProgresion + stepOfProgresion * (numberOfHiddenItem);
   return [question, rightAnswer];
 };
 
